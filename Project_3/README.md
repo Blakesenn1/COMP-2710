@@ -1,2 +1,2 @@
-# P3-Data-Structure
-Create a data structure around a trivia game. The full project outline can be read in Project4.pdf.
+# P3-File-IO-Arrays
+File input/output operations and array manipulation to merge sorted lists. The full project outline can be read in Project3.pdf.

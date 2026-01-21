@@ -182,27 +182,32 @@ int main() {
   #endif
   #ifdef UNIT_TESTING
   cout << "*** This is a debugging version ***" << endl;
+   
   cout << "Unit Test Case 1: Ask no question. The program should give a
     warning message." << endl;
   bool warning = game.ask_question(0);
   assert(!warning);
   cout << "\nCase 1 Passed" << endl << endl;
   game.initial_questions(1);
+   
   cout << "Unit Test Case 2.1: Ask 1 question in the linked list. The tester
     enters an incorrect answer." << endl;
   game.ask_question(1);
   assert(game.score == 0);
   cout << "\nCase 2.1 passed" << endl << endl;
+   
   cout << "Unit Test Case 2.2: Ask 1 question in the linked list. The tester
     enters a correct answer." << endl;
   game.ask_question(1);
   assert(game.score == 100);
   cout << "\nCase 2.2 passed" << endl << endl;
+   
   cout << "Unit Test Case 3: Ask all the questions in the linked list." <<
     endl;
   bool played = game.ask_question(3);
   assert(played);
   cout << "\nCase 3 passed" << endl << endl;
+   
   cout << "Unit Test Case 4: Ask 5 questions in the linked list." << endl;
   warning = game.ask_question(5);
   assert(!warning);
